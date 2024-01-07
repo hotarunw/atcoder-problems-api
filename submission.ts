@@ -14,7 +14,7 @@ type SubmissionEntry = {
     point: number,
     length: number,
     result: string,
-    execution_time: number
+    execution_time?: number
 };
 
 async function getSubmissionsCount(user: string, from: number, to: number) {

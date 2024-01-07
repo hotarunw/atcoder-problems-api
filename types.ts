@@ -9,12 +9,22 @@ export type Contest = {
 export type Problem = {
     id: string,
     contest_id: string,
+    problem_index: string,
+    name: string,
     title: string
 };
 
-export type MergedProblem =  {
+export type ContestAndProblem = {
+    contest_id: string,
+    problem_id: string,
+    problem_index: string
+};
+
+export type MergedProblem = {
     id: string,
     contest_id: string,
+    problem_index: string,
+    name: string,
     title: string,
     shortest_submission_id: number | null,
     shortest_contest_id: string | null,
